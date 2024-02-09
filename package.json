@@ -1,0 +1,42 @@
+{
+  "name": "mildom-livechat-react",
+  "version": "1.0.0",
+  "description": "ミルダム・ライブチャットを復号化します",
+  "author": "coreizer <coreizer@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.3.2",
+    "@mantine/form": "^7.3.2",
+    "@mantine/hooks": "^7.3.2",
+    "autoprefixer": "^10.4.12",
+    "buffer": "^6.0.3",
+    "dayjs": "^1.11.10",
+    "postcss": "^8.4.17",
+    "postcss-preset-mantine": "^1.12.2",
+    "postcss-simple-vars": "^7.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-use": "^17.4.0",
+    "xxtea-node": "^1.1.4"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
