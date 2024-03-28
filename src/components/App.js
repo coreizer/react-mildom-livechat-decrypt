@@ -34,7 +34,7 @@ const App = () => {
   console.log(form.getInputProps('channel_id').value)
 
   const [items, { push }] = useList()
-  const ws = useRef(
+  const socket = useRef(
     new WebSocket(
       `wss://jp-room1.mildom.com/?roomId=${
         form.getInputProps('channel_id').value
@@ -42,8 +42,8 @@ const App = () => {
     )
   )
 
-  // "blob" から "arraybuffer" に変更します。
-  ws.current.binaryType = 'arraybuffer'
+  // "blob" から "arraybuffer" に変更
+  socket.current.binaryType = 'arraybuffer'
 
   useEffect(() => {
     const enterRoomJson = JSON.stringify({
@@ -77,12 +77,12 @@ const App = () => {
 
     console.log('buffer:', buf, buf.byteLength)
 
-    ws.current.onopen = () => {
+    socket.current.onopen = () => {
       console.log('Connection established')
-      ws.current.send(buf)
+      socket.current.send(buf)
     }
 
-    ws.current.onmessage = (res) => {
+    socket.current.onmessage = (res) => {
       if (res.data instanceof ArrayBuffer) {
         const decrypted = xxtea.decrypt(
           new Uint8Array(res.data).slice(8),
