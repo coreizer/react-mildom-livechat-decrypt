@@ -16,8 +16,8 @@ $ yarn build
 ```
 
 ## 👀 サンドボックス
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat-square&logo=codesandbox)](https://codesandbox.io/s/github/coreizer/react-mildom-livechat-decrypt)
 
-<a href="https://codesandbox.io/s/mildom-mirudamu-raibutiyatutojie-xi-tobiao-shi-84l11">https://codesandbox.io/s/mildom-mirudamu-raibutiyatutojie-xi-tobiao-shi-84l11</a>
 
 ## 💎 Todo
 
